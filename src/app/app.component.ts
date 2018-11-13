@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  dd(input: Document, abc: string) {
-    input.textContent = abc;
-  }
+  css = {
+    color: 'red',
+    backgroundColor: 'blue'
+  };
+
+
 }

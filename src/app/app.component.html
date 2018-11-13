@@ -1,15 +1,4 @@
-<button (click)="dd()">{{text}}</button>
+<div #divText></div>
 
-<div>
-    <div>姓名:</div>
-    <div [hidden]="edit">
-        <input type="text" [(ngModel)]="name">
-    </div>
-    <div>{{name}}</div>
-
-    <div>生日:</div>
-    <div [hidden]="edit">
-        <input type="text" [(ngModel)]="birthday">
-    </div>
-    <div>{{birthday}}</div>
-</div>
+<button (click)="dd(divText, '你好')">你好</button>
+<button (click)="dd(divText, '大家好')">大家好</button>

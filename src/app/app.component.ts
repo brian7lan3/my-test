@@ -16,4 +16,8 @@ export class AppComponent {
     { name: "i5-7600", price: "7000", rank: 2 },
     { name: "i3-7300", price: "5000", rank: 3 },
   ]
+
+  insert() {
+    this.cpu.push({ name: this.name, price: this.price, rank: this.rank });
+  }
 }

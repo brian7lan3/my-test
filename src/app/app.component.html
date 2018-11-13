@@ -5,35 +5,34 @@
         <td>等級</td>
         <td>編輯'</td>
     </tr>
-    <tr *ngFor="let item of fun">
+    <tr *ngFor="let item of cpu">
         <td>
-            <div *ngIf="!edit">
+            <div *ngIf="!item.edit">
                 {{item.name}}
             </div>
-            <div *ngIf="edit">
+            <div *ngIf="item.edit">
                 <input type="text" [(ngModel)]="item.name">
             </div>
         </td>
         <td>
-            <div *ngIf="!edit">
+            <div *ngIf="!item.edit">
                 {{item.price}}
             </div>
-            <div *ngIf="edit">
+            <div *ngIf="item.edit">
                 <input type="text" [(ngModel)]="item.price">
             </div>
         </td>
         <td>
-            <div *ngIf="!edit">
+            <div *ngIf="!item.edit">
                 {{item.rank}}
             </div>
-            <div *ngIf="edit">
+            <div *ngIf="item.edit">
                 <input type="text" [(ngModel)]="item.rank">
             </div>
         </td>
         <td>
-            <button *ngIf="!edit" (click)="edit=!edit">編輯</button>
-            <button *ngIf="edit" (click)="edit=!edit">確認</button>
+            <button *ngIf="!item.edit" (click)="item.edit=true">編輯</button>
+            <button *ngIf="item.edit" (click)="item.edit=falsr">確認</button>
         </td>
     </tr>
-    </tbody>
 </table>

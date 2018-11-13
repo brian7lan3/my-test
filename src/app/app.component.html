@@ -10,6 +10,7 @@
         <td>價錢</td>
         <td>等級</td>
         <td>編輯</td>
+        <td>刪除</td>
     </tr>
     <tr *ngFor="let item of cpu">
         <td>
@@ -40,6 +41,9 @@
             <!-- item.edit=true -->
             <button *ngIf="!item.edit" (click)="item.edit=true">編輯</button>
             <button *ngIf="item.edit" (click)="item.edit=falsr">確認</button>
+        </td>
+        <td>
+            <button (click)="delete()">刪除</button>
         </td>
     </tr>
 </table>

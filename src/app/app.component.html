@@ -1,7 +1,6 @@
-<input type="text" #demo>
+<div #divText>
 
-<div>
-    {{text}}
 </div>
 
-<button (click)="dd(demo)">按我</button>
+<button (click)="dd(divText, '你好')">你好</button>
+<button (click)="dd(divText, '大家好')">大家好</button>

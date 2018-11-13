@@ -8,9 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   text = '';
 
-  
-  dd(demo: HTMLInputElement) {
+  dd(divText: Document, text: string) {
 
-    this.text = demo.value;
+    divText.textContent = text;
   }
 }

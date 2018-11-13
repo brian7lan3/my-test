@@ -10,7 +10,5 @@ export class AppComponent {
   name = '請輸入您的名子';
   birthday = '請輸入您的生日';
 
-  // call() {
- 
-  // }
+
 }

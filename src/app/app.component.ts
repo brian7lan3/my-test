@@ -8,14 +8,16 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 })
 export class AppComponent {
 
-  class = "css1 css2";
+  class = true;
 
 
 
   c1() {
+    this.class = true;
   }
 
   c2() {
+    this.class = false;
   }
 
 

@@ -8,23 +8,9 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 })
 export class AppComponent {
 
-  class = {
-    css1: true,
-    css2: false
-  }
-
-
-
-  c1() {
-    this.class.css1 = true;
-    this.class.css2 = false;
-  }
-  c2() {
-    this.class.css1 = false;
-    this.class.css2 = true;
-  }
-
-
-
-
+  fun = [
+    { name: "台灣", persent: "5%", rank: 0 },
+    { name: "日本", persent: "87%", rank: 5 },
+    { name: "韓國", persent: "33%", rank: 3 }
+  ];
 }

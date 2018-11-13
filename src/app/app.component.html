@@ -31,6 +31,7 @@
             </div>
         </td>
         <td>
+            <!-- item.edit=true -->
             <button *ngIf="!item.edit" (click)="item.edit=true">編輯</button>
             <button *ngIf="item.edit" (click)="item.edit=falsr">確認</button>
         </td>

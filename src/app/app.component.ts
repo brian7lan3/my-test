@@ -8,12 +8,10 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 })
 export class AppComponent {
 
-  //如果要用ngif的話，必須先用布林函數true false
-  edit = false;
 
-  fun = [
-    { name: "台灣", persent: "5%", rank: 0 },
-    { name: "日本", persent: "87%", rank: 5 },
-    { name: "韓國", persent: "33%", rank: 3 }
+  cpu = [
+    { name: "i7-7700", price: "9800", rank: 1 },
+    { name: "i5-7600", price: "7000", rank: 2 },
+    { name: "i3-7300", price: "5000", rank: 3 }
   ];
 }

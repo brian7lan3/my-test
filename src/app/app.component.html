@@ -1,39 +1,39 @@
 <table border="1">
-    <thead>
-        <tr>
-            <th style="width: 300px;">
-                name
-            </th>
-            <th style="width: 300px;">
-                rank
-            </th>
-            <th style="width: 300px;">
-                edit
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of fun">
-            <td>
-                <div *ngIf="!edit">
-                    {{item.name}}
-                </div>
-                <div *ngIf="edit">
-                    <input type="text" [(ngModel)]="item.name">
-                </div>
-            </td>
-            <td>
-                <div *ngIf="!edit">
-                    {{item.persent}}
-                </div>
-                <div *ngIf="edit">
-                    <input type="text" [(ngModel)]="item.persent">
-                </div>
-            </td>
-            <td>
-                <button *ngIf="!edit" (click)="edit=!edit">編輯</button>
-                <button *ngIf="edit" (click)="edit=!edit">確認</button>
-            </td>
-        </tr>
+    <tr>
+        <td>名稱</td>
+        <td>價錢</td>
+        <td>等級</td>
+        <td>編輯'</td>
+    </tr>
+    <tr *ngFor="let item of fun">
+        <td>
+            <div *ngIf="!edit">
+                {{item.name}}
+            </div>
+            <div *ngIf="edit">
+                <input type="text" [(ngModel)]="item.name">
+            </div>
+        </td>
+        <td>
+            <div *ngIf="!edit">
+                {{item.price}}
+            </div>
+            <div *ngIf="edit">
+                <input type="text" [(ngModel)]="item.price">
+            </div>
+        </td>
+        <td>
+            <div *ngIf="!edit">
+                {{item.rank}}
+            </div>
+            <div *ngIf="edit">
+                <input type="text" [(ngModel)]="item.rank">
+            </div>
+        </td>
+        <td>
+            <button *ngIf="!edit" (click)="edit=!edit">編輯</button>
+            <button *ngIf="edit" (click)="edit=!edit">確認</button>
+        </td>
+    </tr>
     </tbody>
 </table>

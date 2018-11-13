@@ -8,19 +8,9 @@ import { removeDebugNodeFromIndex } from '@angular/core/src/debug/debug_node';
 })
 export class AppComponent {
 
-  css = {
+  class = "css1 css2";
 
-  }
 
-  css1 = {
-    color: 'red',
-    backgroundColor: 'blue'
-  }
-
-  css2 = {
-    color: 'yellow',
-    backgroundColor: 'green'
-  }
 
   c1() {
     this.css = this.css1;

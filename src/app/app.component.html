@@ -14,15 +14,26 @@
     </thead>
     <tbody>
         <tr *ngFor="let item of fun">
-            <th>
-                {{item.name}}
-            </th>
-            <th>
-                {{item.persent}}
-            </th>
-            <th>
-
-            </th>
+            <td>
+                <div>
+                    {{item.name}}
+                </div>
+                <div>
+                    <input type="text" [(ngModel)]="item.name">
+                </div>
+            </td>
+            <td>
+                <div>
+                    {{item.persent}}
+                </div>
+                <div>
+                    <input type="text" [(ngModel)]="item.persent">
+                </div>
+            </td>
+            <td>
+                <button>編輯</button>
+                <button>確認</button>
+            </td>
         </tr>
     </tbody>
 </table>

@@ -2,7 +2,7 @@
 
 <div>
     <div>姓名:</div>
-    <div><input type="text" [(ngModel)]="name" *ngIf="edit"></div>
+    <div *ngIf="edit"><input type="text" [(ngModel)]="name"></div>
     <div>{{name}}</div>
 
     <div>生日:</div>

@@ -10,8 +10,8 @@ export class AppComponent {
   name = 'kai';
   birthday = '11/31';
 
-  call() {
-    alert("呼叫成功!");
+  call(money: string) {
+    alert("你給了" + money);
 
   }
 

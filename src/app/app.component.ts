@@ -7,8 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   test = '測試';
-  name = '請輸入您的名子';
-  birthday = '請輸入您的生日';
+  name = 'Lue';
+  birthday = '12/2';
 
+  edit = true;
+
+  dd() {
+
+    this.edit = !this.edit;
+  }
 
 }

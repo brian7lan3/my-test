@@ -1,5 +1,27 @@
-<button (click)="call(100)">呼叫</button>
-<input type="text" [(ngModel)]="name"><br>
+<button (click)="call(100)">編輯</button>
+<!-- <input type="text" [(ngModel)]="name"><br> -->
 
-姓名:{{name}}<br>
-生日:{{birthday}}<br>
+<div>
+  <div>
+    姓名:
+  </div>
+  <div *ngIf="edit">
+    <input type="text" [(ngModel)]="name">
+  </div>
+  <div *ngIf="!edit">
+    {{name}}
+  </div>
+
+  <div>
+    生日:
+  </div>
+  <div *ngIf="edit">
+    <input type="text" [(ngModel)]="birthday">
+  </div>
+  <div *ngIf="!edit">
+    {{birthday}}
+  </div>
+</div>
+
+<!-- 姓名:{{name}}<br>
+生日:{{birthday}}<br> -->

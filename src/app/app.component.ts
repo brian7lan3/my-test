@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'my-test';
   name = 'kai';
   birthday = '11/31';
+  edit = false;
 
   call(money: string) {
     alert("你給了" + money);

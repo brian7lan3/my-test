@@ -20,4 +20,8 @@ export class AppComponent {
   insert() {
     this.cpu.push({ name: this.name, price: this.price, rank: this.rank });
   }
+
+  delete(_i: number) {
+    this.cpu.splice(_i, 1);
+  }
 }

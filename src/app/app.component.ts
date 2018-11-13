@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  text = '';
 
+  
   dd(demo: HTMLInputElement) {
 
-    console.log(demo);
+    this.text = demo.value;
   }
 }

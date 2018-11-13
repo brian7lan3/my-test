@@ -1,2 +1,12 @@
-<button (click)="call(100)">呼叫</button>
-{{test}}
+<!-- <button (click)="call(100)">呼叫</button> -->
+
+
+<div>
+    <div>姓名:</div>
+    <div><input type="text" [(ngModel)]="name"></div>
+    <div>{{name}}</div>
+        
+    <div>生日:</div>
+    <div><input type="text" [(ngModel)]="birthday"></div>
+    <div>{{birthday}}</div>
+</div>

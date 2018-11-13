@@ -11,11 +11,11 @@ import { Test2Component } from './test2/test2.component';
   declarations: [
     AppComponent,
     Test2Component,
-    FormsModule
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

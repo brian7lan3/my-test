@@ -13,10 +13,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
+        <tr *ngFor="let item of fun">
+            <th>
+                {{item.name}}
+            </th>
+            <th>
+                {{item.persent}}
+            </th>
+            <th>
+
+            </th>
         </tr>
     </tbody>
 </table>

@@ -7,8 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-test';
+  message = "沒事";
 
   tem() {
     alert("被按了!");
+  }
+
+  over() {
+    this.message = "進來了";
+  }
+
+  leave() {
+    this.message = "離開了!";
   }
 }

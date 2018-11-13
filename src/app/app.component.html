@@ -5,20 +5,20 @@
   <div>
     姓名:
   </div>
-  <div *ngIf="edit">
+  <div [hidden]="!edit">
     <input type="text" [(ngModel)]="name">
   </div>
-  <div *ngIf="!edit">
+  <div [hidden]="edit">
     {{name}}
   </div>
 
   <div>
     生日:
   </div>
-  <div *ngIf="edit">
+  <div [hidden]="!edit">
     <input type="text" [(ngModel)]="birthday">
   </div>
-  <div *ngIf="!edit">
+  <div [hidden]="edit">
     {{birthday}}
   </div>
 </div>

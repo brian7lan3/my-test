@@ -11,8 +11,8 @@ export class AppComponent {
   birthday = '11/31';
   edit = false;
 
-  call(money: string) {
-    alert("你給了" + money);
+  call() {
+    this.edit = !this.edit;
 
   }
 

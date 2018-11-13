@@ -13,11 +13,9 @@ export class AppComponent {
 
 
   c1() {
-    this.css = this.css1;
   }
 
   c2() {
-    this.css = this.css2;
   }
 
 

@@ -1,7 +1,9 @@
 .css1{
     color: red;
+    background-color: black;
 }
 
 .css2{
-    background-color: black;
+    color: yellowgreen;
+    background-color: rgb(230, 31, 220);
 }

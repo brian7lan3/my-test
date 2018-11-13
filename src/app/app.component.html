@@ -31,8 +31,8 @@
                 </div>
             </td>
             <td>
-                <button *ngIf="!edit">編輯</button>
-                <button *ngIf="edit">確認</button>
+                <button *ngIf="!edit" (click)="edit=!edit">編輯</button>
+                <button *ngIf="edit" (click)="edit=!edit">確認</button>
             </td>
         </tr>
     </tbody>

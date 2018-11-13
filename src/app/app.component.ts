@@ -13,6 +13,8 @@ export class AppComponent {
   edit = false;
   text = '編輯';
 
+  id = "abc";
+
   call() {
     this.edit = !this.edit;
     if (this.text == '編輯') {

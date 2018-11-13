@@ -5,7 +5,7 @@
   <div>
     姓名:
   </div>
-  <div [hidden]="!edit">
+  <div [hidden]="!edit" [id]="id">
     <input type="text" [(ngModel)]="name">
   </div>
   <div [hidden]="edit">

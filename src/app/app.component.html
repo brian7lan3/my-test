@@ -2,10 +2,10 @@
 
 <div>
     <div>姓名:</div>
-    <div *ngIf="edit"><input type="text" [(ngModel)]="name"></div>
+    <div *ngIf="edit"><input type="text" [(ngModel)]="name">已經消失</div>
     <div>{{name}}</div>
 
     <div>生日:</div>
-    <div><input type="text" [(ngModel)]="birthday" *ngIf="edit"></div>
+    <div><input type="text" [(ngModel)]="birthday" *ngIf="edit">還沒消失</div>
     <div>{{birthday}}</div>
 </div>

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { text } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-root',
@@ -8,22 +7,8 @@ import { text } from '@angular/core/src/render3';
 })
 export class AppComponent {
   title = 'my-test';
-  name = 'kai';
-  birthday = '11/31';
-  edit = false;
-  text = '編輯';
 
-  id = "abc";
-  dd = "true";
-  col = 2;
-
-  call() {
-    this.edit = !this.edit;
-    if (this.text == '編輯') {
-      this.text = '確定';
-    } else {
-      this.text = '編輯';
-    }
+  tem() {
+    alert("被按了!");
   }
-
 }

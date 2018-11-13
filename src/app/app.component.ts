@@ -10,11 +10,18 @@ export class AppComponent {
   name = 'Lue';
   birthday = '12/2';
 
-  edit = true;
+  edit = false;
+  text = '編輯';
 
   dd() {
-
     this.edit = !this.edit;
+
+    if (this.text === '編輯') {
+      this.text = '確認';
+    } else {
+      this.text = '編輯';
+    }
+
   }
 
 }

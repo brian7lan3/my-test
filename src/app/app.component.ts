@@ -14,6 +14,7 @@ export class AppComponent {
   text = '編輯';
 
   id = "abc";
+  dd = "true";
 
   call() {
     this.edit = !this.edit;
